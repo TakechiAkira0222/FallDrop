@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 3
   jumpPower: 7
-  moveSpeed: 3
+  moveSpeed: 10
   dashSpeed: 5
   jumpingMoveSpeed: 2

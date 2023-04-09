@@ -1,15 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace Takechi.PlayerSpace
+namespace Takechi.PlayerSpace.StateVariable
 {
-    public partial class Player : MonoBehaviour
+    public partial class PlayerStateVariableManagement : MonoBehaviour
     {
-        public bool isGrounded
+        public bool GetIsGrounded
         {
             get
             {
                 Ray ray =
-                       new Ray(myRigidbody.gameObject.transform.position + new Vector3(0, 0.1f),
+                       new Ray(ad.myRigidbody.gameObject.transform.position + new Vector3(0, 0.1f),
                                 Vector3.down * 0.3f);
 
                 RaycastHit raycastHit;
