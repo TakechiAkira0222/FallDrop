@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 62287499}
   - component: {fileID: 62287500}
   - component: {fileID: 62287497}
+  - component: {fileID: 62287501}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -170,12 +171,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 62287494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d96c0bc41ddb83e4684f24bc0016cb92, type: 3}
+  m_Script: {fileID: 11500000, guid: 6baf0334ce2582a479e094ba21197479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerParameter: {fileID: 11400000, guid: c176b63c3b2bfcc46acd4c31d206f767, type: 2}
-  _playerInputVariableManagement: {fileID: 62287499}
-  _playerStateVariableManagement: {fileID: 62287500}
+  _characterParameter: {fileID: 11400000, guid: 27db3d14df03b64408a76e045caf17b4,
+    type: 2}
+  _characterInputVariableManagement: {fileID: 62287499}
+  _characterStatusVariableManagement: {fileID: 62287497}
+  _characterReferenceVariableManagement: {fileID: 62287500}
   _avater: {fileID: 1955198013}
   _rigidbody: {fileID: 1955198019}
   _camera: {fileID: 330585545}
@@ -188,10 +191,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 62287494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f632225e2ee814641b2d6a948df3f9cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f537462d59b843418bcf6fa660bbee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAddresManagement: {fileID: 62287496}
+  _characterAddresManagement: {fileID: 62287496}
 --- !u!114 &62287498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +235,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 62287494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1923179e3b5257449e676b28ff02092, type: 3}
+  m_Script: {fileID: 11500000, guid: 62003657e05a57c4ebd575d74ee0003e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &62287500
@@ -244,10 +247,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 62287494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0302613f0cb0d95468c8bc544060d350, type: 3}
+  m_Script: {fileID: 11500000, guid: f73eb3c6cdbb98241b485b1f9b1a66ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAddresManagement: {fileID: 62287496}
+  _characterAddresManagement: {fileID: 62287496}
+--- !u!114 &62287501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62287494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10eb2585c33cb34e9573e9aec9d607c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CharacterAddresManagement: {fileID: 62287496}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,11 +392,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d8e2eb59a4be04f8f6e27ba5837c46, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bc9500870a28b747875ddba1811b94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAddresManagement: {fileID: 62287496}
-  distanceToPlayerM: 3
+  _CharacterAddresManagement: {fileID: 62287496}
+  distanceToCharacterM: 2
   slideDistanceM: 0
   heightM: 0.8
   xSensityvity: 0.3
@@ -1080,7 +1096,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1955198013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6d177a72ee42449b5502fdd0f2a06c, type: 3}
+  m_Script: {fileID: 11500000, guid: b7109e729c4c25c43a4a03556f1bcd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAddresManagement: {fileID: 62287496}
+  _characterAddresManagement: {fileID: 62287496}
