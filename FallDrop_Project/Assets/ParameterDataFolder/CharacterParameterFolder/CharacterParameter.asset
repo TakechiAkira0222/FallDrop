@@ -16,6 +16,6 @@ MonoBehaviour:
   _attackPower: 3
   _defensePower: 3
   _jumpPower: 10
-  _moveSpeed: 5
+  _moveSpeed: 10
   _dashSpeed: 8
   _jumpingMoveSpeed: 2

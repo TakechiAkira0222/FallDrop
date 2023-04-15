@@ -16,15 +16,12 @@ namespace Takechi.CharacterSpace.InputVariable
         private void OnMousePostion(InputValue value)
         {
             mousePostion = value.Get<Vector2>();
-            //Debug.Log(value.Get<Vector2>());
-
             MovingMouseAction();
         }
 
         private void OnMovementAxis(InputValue value)
         {
             movementAxis = value.Get<Vector2>();
-            //Debug.Log(value.Get<Vector2>());
 
             if ( movementAxis != Vector2.zero)
             {
@@ -35,5 +32,9 @@ namespace Takechi.CharacterSpace.InputVariable
                 OffMoveingAction();
             }
         }
+
+        private void OnRotationTheStop()  => OnRotationTheStopAction();
+        private void OnRotationTheRight() => OnRotationTheRightAction();
+        private void OnRotationTheLeft()  => OnRotationTheLeftAction();
     }
 }

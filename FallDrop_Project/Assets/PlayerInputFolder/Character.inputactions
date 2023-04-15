@@ -22,6 +22,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "RotationTheStop",
+                    "type": "Button",
+                    "id": "f51da7db-f218-4803-93f1-17ba5fc40665",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RotationTheRight",
+                    "type": "Button",
+                    "id": "f5f7a985-0c93-4593-ab4a-6a2530d85025",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RotationTheLeft",
+                    "type": "Button",
+                    "id": "97ca9c71-424c-406e-8e4b-62e020da5c2b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -165,6 +192,39 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "MousePostion",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b526ce4-ed0c-4f3d-917f-e1d107635c1c",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "RotationTheStop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c4d9633d-2533-4771-8580-5c5f16f07b1c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "RotationTheRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c0896a12-638a-486f-97fd-59a6719e24b5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "RotationTheLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

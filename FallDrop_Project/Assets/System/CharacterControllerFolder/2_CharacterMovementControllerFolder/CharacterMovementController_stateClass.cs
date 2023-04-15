@@ -49,7 +49,7 @@ namespace Takechi.CharacterSpace.MovementController
             private CharacterReferenceVariableManagement refValue => ad.GetMyReferenceVariableManagement;
             private Vector2    axis => ad.GetMyInputVariableManagement.GetMovementAxis;
             private Camera     myCamera => refValue.GetMyCamera;
-            private GameObject myAvater => refValue.GetMyAvater;
+            private GameObject myBody   => refValue.GetMyBody;
             private Rigidbody  myRb => refValue.GetMyRigidbody;
             private float speed => ad.GetMyStatusVariableManagement.GetMoveSpeed;
 
@@ -71,12 +71,14 @@ namespace Takechi.CharacterSpace.MovementController
             private void RestoreTheAvatarViewpoint()
             {
                 Vector3 tagetAngles =
-                     new Vector3( myAvater.transform.eulerAngles.x,
+                     new Vector3( myBody.transform.eulerAngles.x,
                                   myCamera.transform.eulerAngles.y,
-                                  myAvater.transform.eulerAngles.z);
+                                  myBody.transform.eulerAngles.z);
 
-                myAvater.transform.eulerAngles = Vector3.Lerp( myAvater.transform.eulerAngles, tagetAngles, 0.5f);
+                myBody.transform.eulerAngles = tagetAngles;
+                     Vector3.Lerp( myBody.transform.eulerAngles, tagetAngles, Time.deltaTime);
             }
+
             private void MovementControllProcess(Vector2 axis, float moveSpeed)
             {
                 Vector3 movementVelocity;

@@ -18,8 +18,10 @@ namespace Takechi.CharacterSpace
         [SerializeField] private CharacterReferenceVariableManagement _characterReferenceVariableManagement;
 
         [SerializeField] private GameObject _avater;
+        [SerializeField] private GameObject _body;
         [SerializeField] private Rigidbody  _rigidbody;
         [SerializeField] private Camera     _camera;
+        [SerializeField] private GameObject _weapon;
 
         public CharacterParameter GetMyParameter => _characterParameter;
         public CharacterInputVariableManagement     GetMyInputVariableManagement  => _characterInputVariableManagement;
@@ -30,6 +32,14 @@ namespace Takechi.CharacterSpace
         /// 非推奨　'CharacterReferenceVariableManagement' を使用します。
         /// </summary>
         public GameObject myAvater    => _avater;
+        /// <summary>
+        /// 非推奨　'CharacterReferenceVariableManagement' を使用します。
+        /// </summary>
+        public GameObject myBody => _body;
+        /// <summary>
+        /// 非推奨　'CharacterReferenceVariableManagement' を使用します。
+        /// </summary>
+        public GameObject myWeapon => _weapon;
         /// <summary>
         /// 非推奨　'CharacterReferenceVariableManagement' を使用します。
         /// </summary>

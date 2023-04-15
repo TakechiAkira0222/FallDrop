@@ -6,7 +6,7 @@ namespace Takechi.CharacterSpace.StateController
 {
     public partial class CharacterStateController : MonoBehaviour
     {
-        [SerializeField] private CharacterAddresManagement _CharacterAddresManagement;
-        private CharacterAddresManagement addresManagement => _CharacterAddresManagement;
+        [SerializeField] private CharacterAddresManagement _characterAddresManagement;
+        private CharacterAddresManagement addresManagement => _characterAddresManagement;
     }
 }
