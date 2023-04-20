@@ -13,5 +13,6 @@ namespace Takechi.CharacterSpace.StatusVariable
         private float moveSpeed;
         private float dashSpeed;
         private float jumpingMoveSpeed;
+        private float weaponRoationSpeed;
     }
 }

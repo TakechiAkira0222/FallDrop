@@ -14,6 +14,7 @@ namespace Takechi.CharacterSpace.Parameter
         [SerializeField] private float _jumpPower = 10;
         [SerializeField] private float _moveSpeed = 5;
         [SerializeField] private float _dashSpeed = 8;
+        [SerializeField] private float _weaponRotationSpeed = 100;
         [SerializeField] private float _jumpingMoveSpeed = 2;
 
         public int   GetMaxHp => _maxHp;
@@ -22,6 +23,7 @@ namespace Takechi.CharacterSpace.Parameter
         public float GetJumpPower => _jumpPower;
         public float GetMoveSpeed => _moveSpeed;
         public float GetDashSpeed => _dashSpeed;
+        public float GetWeaponRotationSpeed => _weaponRotationSpeed;
         public float GetJumpingMoveSpeed => _jumpingMoveSpeed;
     }
 }

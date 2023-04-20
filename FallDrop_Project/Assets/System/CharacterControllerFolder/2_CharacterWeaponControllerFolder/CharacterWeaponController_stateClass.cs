@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Takechi.CharacterSpace.Parameter;
+using Takechi.CharacterSpace.StatusVariable;
 using Unity.VisualScripting;
 using UnityEngine;
 using State = StateMachine<Takechi.CharacterSpace.WeaponController.CharacterWeaponController>.State;
@@ -24,6 +26,7 @@ namespace Takechi.CharacterSpace.WeaponController
         private class StateRotationTheRight : State
         {
             CharacterAddresManagement ad => Owner.addresManagement;
+            float rotationalSpeed => ad.GetMyStatusVariableManagement.GetWeaponRoationSpeed;
             GameObject weapon => ad.myWeapon;
             protected override void OnEnter(State prevState)
             {
@@ -32,13 +35,14 @@ namespace Takechi.CharacterSpace.WeaponController
 
             protected override void OnUpdate()
             {
-                weapon.transform.localEulerAngles -= Vector3.up * Time.deltaTime * 100;
+                weapon.transform.localEulerAngles -= Vector3.up * Time.deltaTime * rotationalSpeed;
             }
         }
 
         private class StateRotationTheLeft : State
         {
             CharacterAddresManagement ad => Owner.addresManagement;
+            float rotationalSpeed => ad.GetMyStatusVariableManagement.GetWeaponRoationSpeed;
             GameObject weapon => ad.myWeapon;
 
             protected override void OnEnter(State prevState)
@@ -48,7 +52,7 @@ namespace Takechi.CharacterSpace.WeaponController
 
             protected override void OnUpdate()
             {
-                weapon.transform.localEulerAngles += Vector3.up * Time.deltaTime * 100;
+                weapon.transform.localEulerAngles += Vector3.up * Time.deltaTime * rotationalSpeed;
             }
         }
     }

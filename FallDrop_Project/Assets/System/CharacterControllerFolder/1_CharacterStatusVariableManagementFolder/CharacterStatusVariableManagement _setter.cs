@@ -13,5 +13,6 @@ namespace Takechi.CharacterSpace.StatusVariable
         public float SetMoveSpeed { set => moveSpeed = value; }
         public float SetDashSpeed { set => dashSpeed = value; }
         public float SetJumpingMoveSpeed { set => jumpingMoveSpeed = value; }
+        public float SetWeaponRoationSpeed { set => weaponRoationSpeed = value; }
     }
 }

@@ -36,5 +36,6 @@ namespace Takechi.CharacterSpace.StatusVariable
         public float GetMoveSpeed => moveSpeed;
         public float GetDashSpeed => dashSpeed;
         public float GetJumpingMoveSpeed => jumpingMoveSpeed;
+        public float GetWeaponRoationSpeed => weaponRoationSpeed; 
     }
 }

@@ -20,6 +20,7 @@ namespace Takechi.CharacterSpace.StatusVariable
             SetMoveSpeed   = myParameter.GetMoveSpeed;
             SetJumpPower   = myParameter.GetJumpPower;
             SetDashSpeed   = myParameter.GetDashSpeed;
+            SetWeaponRoationSpeed = myParameter.GetWeaponRotationSpeed;
         }
     }
 }
