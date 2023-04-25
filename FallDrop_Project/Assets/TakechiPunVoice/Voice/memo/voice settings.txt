@@ -1,0 +1,9 @@
+/*
+
+初期手順
+PhtonViceControllerを、scene内に配置してください。
+
+スピーカーの設定
+speakerPrefabは、音声をspeakerの役割となるオブジェクトに、配置してください。
+
+*/
